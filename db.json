@@ -1,3 +1,11 @@
 {
-    "products": []
+  "products": [
+    {
+      "id": 1769975056117,
+      "title": "Hola",
+      "description": "Hi",
+      "price": "12",
+      "createdAt": "1/2/2026"
+    }
+  ]
 }
