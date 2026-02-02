@@ -84,9 +84,8 @@ function renderProducts(products) {
 // Loads products from API
 async function getProducts() {
     try {
-        const response = await fetch("http://localhost:3000/products");
-        products = await response.json();
-        renderProducts(products);
+        const response = await fetch("http://localhost:3000/products").then(response => response.json()).then(products => renderProducts(products))
+;
     } catch (error) {
         warningMsg.textContent = "Error connecting to server";
         console.error("Error loading products:", error);
